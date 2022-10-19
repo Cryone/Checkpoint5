@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+* {margin: 0; padding:0px;border: 0; -webkit-appearance: none;font-family: 'Roboto', sans-serif; text-decoration: none; font-weight: 0; box-sizing: border-box;}
+
+
+/* <!-- ************************************************
+***********************NAVBAR********************
+************************************************ --> */
+.navbar {
+    background-color: rgba(255, 255, 255, 0.966);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    z-index: 100;
+    height: 80px;
+}
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 23%;
+    height: 80px;
+   
+  
+
+}
+.logo {
+    height: 70%;
+}
+
+.navbar-items {
+    display: flex;
+    font-size: 14px;
+}
+.navbar-item:hover {
+  color: #00C3A5;
+}
+
+/* <!-- ************************************************
+***********************UPPER-HEADER********************
+************************************************ --> */
+
+.page-container{
+    grid-template-rows: 1fr 1fr 1fr 150px; 
+    height: 100vh;
+    width: 100vw;
+    padding-top: 3%;
+}
+
+/* <!-- ************************************************
+***********************UPPER-HEADER********************
+************************************************ --> */
+
+.upper-header {
+    grid-template-rows: 150px 200px 1fr 0.5fr;
+    margin: 0% 23%;
+    
+    
+}
+.header-title {font-size: 30px; font-weight: 100;}
+
+.upper-header img {
+    height: 40px;
+}
+
+.text-sections {
+    grid-template-columns: 1fr 1fr;
+    
+    
+}
+.regular-text {
+    color: rgb(122, 122, 122);
+    font-size: 16px;
+    line-height: 1.6
+}
+.small-regular-text {
+    color: rgb(122, 122, 122);
+    font-size: 15px;
+    line-height: 1.6
+}
+
+.box-section {
+  
+    display: flex;
+    justify-content: space-between;
+}
+
+.box {
+    width: 300px;
+    height: 350px;
+    border-radius: 10px;
+}
+.box-container {
+    grid-template-rows: 1fr 60px ;
+    font-size: 20px;
+}
+
+
+.footer-upper-header{
+    grid-template-columns: 300px 1fr;
+}
+
+.upper-header-logos {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.upper-header-logos img {
+    height: 22px;
+}
+
+
+
+
+/* <!-- ************************************************
+***********************LOWER-HEADER********************
+************************************************ --> */
+.lower-header {
+    background-image: url("../img/lower-header-01.png");
+    background-size: cover;
+    grid-template-columns: 1fr 1fr;
+    height: 700px;
+}
+
+.lower-header-box-section {
+    grid-template-columns: 1fr 1fr;
+    padding-right: 50%;
+}
+.lower-header-box-section-container {
+    grid-template-rows: 500px 500px;
+}
+
+.lower-header-box {
+    width: 250px;
+    height: 280px;
+    background-color: white;
+    
+}
+
+
+
+
+
+/* <!-- ************************************************
+***********************MAIN-CONTAINER********************
+************************************************ --> */
+
+
+.main-container {grid-template-rows: 300px 1fr 100px;
+    margin: 0% 23%;}
+
+
+.container-header {
+    grid-template-rows: 1fr 1fr;
+    text-align: center;
+    
+    margin: 0 22%;
+    
+}
+
+.card-box {
+    width: 312px;
+    height: 340px;
+    border: 1px solid rgba(128, 128, 128, 0.11);
+    background-image: url(/img/warsaw.png);
+    border-radius: 10px; 
+    background-repeat: no-repeat;
+
+}
+.cards-section {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.card-box:hover  {
+    box-shadow: 4px 4px 20px rgba(163, 159, 159, 0.549)  
+}
+
+.card-menu{
+    background-color: #3d83df;
+    width: 120px;
+    height: 30px;
+    border-radius: 3px;
+    font-size: 12px;
+}
+
+.card-menu:hover{
+    background-color: #285b9e;
+
+}
+
+.footer-card {
+    padding-top: 95%;
+}
+.container-footer {
+    padding-top: 15%;
+}
+
+.container-footer-menu {
+    background-color: #3d83df;
+    width: 200px;
+    height: 40px;
+    border-radius: 3px;
+    font-size: 14px;
+}
+.container-footer-menu:hover {
+    background-color: #285b9e;
+
+}
+
+
+.page-footer {
+    
+    border-top: solid 1px rgba(218, 218, 218, 0.479);
+    position: relative;
+}
+
+
+
+/* <!-- ************************************************
+***********************RESPONSIVE********************
+************************************************ --> */
+@media screen and (min-width : 0px) and (max-width : 800px) {
+
+    
+
+}
