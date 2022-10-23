@@ -313,6 +313,11 @@
 
     .navbar-container {margin: 0 15%;}
     .upper-header {margin: 0% 15%;}
+    .box {
+  
+    height: 385px;
+
+}
     .lower-header-container {margin: 0% 15%;}
 
     #lower-header-text-section {padding-bottom: 80%; width: 350px;}
