@@ -131,7 +131,7 @@
 #lower-header-text-section {padding-bottom: 80%; width: 400px;}
 .lower-header-box-section {
     grid-template-columns: 1fr 1fr;
-    padding-right: 50%;
+    
 }
 
 
@@ -218,6 +218,7 @@
     border-top: solid 1px rgba(218, 218, 218, 0.479);
     position: relative;
     margin-top: 10%;
+    /* margin: 10% 23% 0 23%; */
 }
 #page-footer-container {
     grid-template-rows: 50px 50px; margin: 0% 20%;
@@ -227,9 +228,9 @@
 /* <!-- ************************************************
 ***********************RESPONSIVE********************
 ************************************************ --> */
-@media screen and (min-width : 0px) and (max-width : 800px) {
+@media screen and (min-width : 0px) and (max-width : 850px) {
     
-    .navbar-mobile{display: flex; justify-content: space-between; position: fixed; background-color: rgba(255, 255, 255, 0.966); z-index: 500;}
+    .navbar-mobile{display: flex; justify-content: space-between; position: fixed; background-color: rgba(255, 255, 255, 0.966); z-index: 500; width: 100%;}
     .navbar-mobile-container {display: flex; justify-content: space-between;}
     .navbar-mobile-container img {height: 40px;}
     .navbar {display: none;}
@@ -261,29 +262,36 @@
         background-image: url("../img/lower-header--mobile-01.png");
         background-size: cover;
         background-repeat: no-repeat;
-        grid-template: 2fr / 1fr;
-        height: auto;
+        grid-template: 1fr 1fr / 1fr;
+        height: 850px;
         margin: 0;
+        width: 100vw;
       
     }
+    .lower-header-container {margin: 0; display: grid;}
 
-    #lower-header-text-section {
-        padding: 0; width: 100vw; margin: 0; text-align: center;}
+    #lower-header-text-section {padding: 0; margin: 0; text-align: center;}
         
     .lower-header-box-section {
+        display: grid;
         grid-template: 1fr/1fr 1fr;
         padding: 10px 0px 10px 0px;
+        margin-left: 3%;
+        
     }
     .lower-header-box-container {
-        grid-template-rows: 200px 200px /100px 100px;
-        gap: 10;
+        grid-template-rows: 320px 320px;
+        gap: 10px;
+        
+        
         
     }
     .lower-header-box {
         width: 165px;
-        height: 290px;
+        height: 280px;
         background-color: white;
-        padding: 10px;
+        padding: 5px;
+        gap: 0px;
     }
     .main-container {grid-template: 300px 1fr 250px / 1fr;
         margin: 0}
@@ -296,10 +304,27 @@
         }
 
     .cards-section {
-            display: block;
-            position: relative;
-         
+            display: flex;
+            overflow-x: scroll;
+            width: 100vw;
+            
+           
         }
+ 
+    .cards-section::-webkit-scrollbar { width: 10;}
+    .card-box {
+        width: 312px;
+        height: 340px;
+        border: 1px solid rgba(128, 128, 128, 0.11);
+        
+        border-radius: 10px; 
+        background-repeat: no-repeat;
+        display: flex;
+        
+    
+    }
+    .image-container {width: 300px;}
+ 
     .page-footer {
         display: grid; padding-top: 10%; text-align: center; width: 100vw;
         
@@ -309,23 +334,16 @@
     }
 }
 
-@media screen and (min-width : 0px) and (max-width : 1280px) {
+@media screen and (min-width : 850px) and (max-width : 1600px) {
 
     .navbar-container {margin: 0 15%;}
     .upper-header {margin: 0% 15%;}
-    .box {
-  
-    height: 385px;
-
-}
     .lower-header-container {margin: 0% 15%;}
-
     #lower-header-text-section {padding-bottom: 80%; width: 350px;}
     .main-container {margin: 0% 15%;}       
     .container-header {margin: 0 15%;}
-    .box {width: 280px;}
-    .lower-header-box-section {padding-right: 0 ;
-    }
+    .box {width: 280px; height: 380px; gap: 30px;}
+    .lower-header-box-section {padding-right: 0 ;    }
     .lower-header-box {width: 200px;}
 
 
