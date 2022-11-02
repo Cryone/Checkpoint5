@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
 
 * {margin: 0; padding:0px;border: 0; -webkit-appearance: none;font-family: 'Roboto', sans-serif; text-decoration: none; font-weight: 0; box-sizing: border-box;}
+html, body {overflow-x: hidden; width: 100vw; height: 100vh; overflow-y: scroll;}
 
 
 /* <!-- ************************************************
@@ -18,7 +19,7 @@
 .navbar-container {
     display: flex;
     justify-content: space-between;
-    margin: 0 23%;
+    margin: 0 15%;
     height: 80px;
    
   
@@ -52,13 +53,18 @@
     padding-top: 3%;
 }
 
+.list {display: none; width: 220px; height: 180px ;background-color: white; grid-template-rows: 30px 30px 30px 30px 30px; right: 0; top: 30px; position: absolute;}
+.list-item {color: #a3a3a3; padding: 8px; cursor: pointer;}
+.list-item:hover {color: #00C3A5}
+.list-container:hover .list {display: block;}
+.list-container {display: block; position: relative;}
 /* <!-- ************************************************
 ***********************UPPER-HEADER********************
 ************************************************ --> */
 
 .upper-header {
     grid-template-rows: 150px 200px 1fr 0.5fr;
-    margin: 0% 23%;
+    margin: 0 15%;
     
     
 }
@@ -91,15 +97,26 @@
     justify-content: space-between;
 }
 
-.box {
-    width: 300px;
-    height: 350px;
-    border-radius: 5px;
-}
+
 .box-container {
     grid-template-rows: 1fr 60px ;
     font-size: 20px;
 }
+
+.box {
+    width: 290px!important;
+    height: 350px;
+    border-radius: 5px;
+}
+
+.country-list {display: none; width: 250px; height: 260px; position: absolute; background-color: white; margin-bottom: 100%; right: 32%;}
+.country-list-third {display: none; width: 200px; height: 150px; position: absolute; background-color: rgb(255, 255, 255);  right: 42%; margin-top: 60%;}
+.country-list-specialists {display: none; width: 200px; height: 130px; position: absolute; background-color: rgb(255, 255, 255);  right: 42%; margin-top: 30%;}
+.country-item {text-decoration: none; font-size: 15px; }
+.country-item:hover {background-color: #4B8CE0; color: black; }
+.country-list-container:active .country-list {display: block; position: relative}
+.country-list-container-third:active .country-list-third {display: block; position: relative}
+.country-list-container-specialists:active .country-list-specialists {display: block; position: relative}
 
 
 .footer-upper-header{
@@ -127,7 +144,7 @@
    
     height: 700px;
 }
-.lower-header-container {margin: 0% 23%; display: flex; justify-content: space-between;}
+.lower-header-container {margin: 0 15%;; display: flex; justify-content: space-between;}
 #lower-header-text-section {padding-bottom: 80%; width: 400px;}
 .lower-header-box-section {
     grid-template-columns: 1fr 1fr;
@@ -153,14 +170,14 @@
 
 
 .main-container {grid-template-rows: 300px 1fr 100px;
-    margin: 0% 23%;}
+    margin: 0 15%;}
 
 
 .container-header {
     grid-template-rows: 1fr 1fr;
     text-align: center;
     
-    margin: 0 22%;
+    margin: 0 15%;
     
 }
 
@@ -221,7 +238,7 @@
     /* margin: 10% 23% 0 23%; */
 }
 #page-footer-container {
-    grid-template-rows: 50px 50px; margin: 0% 20%;
+    grid-template-rows: 50px 50px; margin: 0 15%;;
 }
 .upper-header-logos-mobile{display: none;}
 
@@ -230,7 +247,7 @@
 ************************************************ --> */
 @media screen and (min-width : 0px) and (max-width : 850px) {
     
-    .navbar-mobile{display: flex; justify-content: space-between; position: fixed; background-color: rgba(255, 255, 255, 0.966); z-index: 500; width: 100%; margin: ;}
+    .navbar-mobile{display: flex; justify-content: space-between; position: fixed; background-color: rgba(255, 255, 255, 0.966); z-index: 500; width: 100%;}
     .navbar-mobile-container {display: flex; justify-content: space-between;}
     .navbar-mobile-container img {height: 40px;}
     .navbar {display: none;}
@@ -241,6 +258,10 @@
         width: 100vw;
         margin: 0;
         padding-top: 20%;}
+        .box {
+            width: 350px;
+
+        }
     .upper-header{margin: 0; 
         padding: 10px;     
         grid-template: 150px 200px 1fr 0.3fr / 1fr;
@@ -250,7 +271,7 @@
     .text-sections {grid-template: 1fr 1fr / 1fr; display: grid; padding-top: 50%; gap: 40px;} 
     .box-section {display: grid ;grid-template: 1fr 1fr / 1fr; gap: 20px; place-items: center; padding-top: 50%;
     }
-
+    .country-list-specialists {margin-top: 10%;}
     .footer-upper-header{grid-template: 100px 1fr / 1fr;}
     
     .upper-header-logos {display: none;}
@@ -307,6 +328,7 @@
             display: flex;
             overflow-x: scroll;
             width: 100vw;
+            padding-left: 50px;
             
            
         }

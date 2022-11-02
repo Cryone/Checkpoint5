@@ -63,6 +63,7 @@
 
 
 /* padding : 2 = up to bottom left to right; 4 = E precise more */
+.p5 {padding: 5px;} 
 .p10 {padding: 10px;} 
 .p20 {padding: 20px;} 
 .p30 {padding: 30px;} 
